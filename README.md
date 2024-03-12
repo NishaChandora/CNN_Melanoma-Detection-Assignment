@@ -1,48 +1,35 @@
 # Project Name
-> Outline a brief description of your project.
+> As a part of the course curriculam, this is an attempt to build a CNN Model Structure which will help in detection of Melanoma Skin Cancer from the ISIC Image Dataset.
 
 
 ## Table of Contents
-* [General Info](#general-information)
-* [Technologies Used](#technologies-used)
-* [Conclusions](#conclusions)
-* [Acknowledgements](#acknowledgements)
-
-<!-- You can include any other section that is pertinent to your problem -->
+* General Information 
+* Building a CNN based model
+* Conclusions
+  
 
 ## General Information
-- Provide general information about your project here.
-- What is the background of your project?
-- What is the business probem that your project is trying to solve?
-- What is the dataset that is being used?
+- Melanoma is a type of cancer that can be deadly if not detected early. It accounts for 75% of skin cancer deaths. 
+- A solution which can evaluate images and alert the dermatologists about the presence of melanoma has the potential to reduce a lot of manual effort needed in diagnosis.
+- We are using ISIC Image Datset for building a CNN based model.
 
-<!-- You don't have to answer all the questions - just the ones relevant to your project. -->
+## Procedure Adopted
+- We experiment with the CNN model building process in the lines of the starter file and instructions provided in the assignment to compare the performance of the different models built using different strategies.
+- The first model is basic model with no dropout layer, no Batch Normalization.
+- The second model has drop out layers.
+- Next we apply a augmentation strategy.
+- The third model has drop out layers, Branch Normalization along with the Augmentation Strategy.
 
-## Conclusions
-- Conclusion 1 from the analysis
-- Conclusion 2 from the analysis
-- Conclusion 3 from the analysis
-- Conclusion 4 from the analysis
-
-<!-- You don't have to answer all the questions - just the ones relevant to your project. -->
-
-
-## Technologies Used
-- library - version 1.0
-- library - version 2.0
-- library - version 3.0
-
-<!-- As the libraries versions keep on changing, it is recommended to mention the version of library used in this project -->
-
-## Acknowledgements
-Give credit here.
-- This project was inspired by...
-- References if any...
-- This project was based on [this tutorial](https://www.example.com).
+## Observations
+ - The first model with no dropout layers or Batch Normalization is clearly overfitting.
+ - The second mode with only dropout layers is performing better than the first model, however, the performance of the model is not upto the mark.
+ - The third model uses augmentation strategy along with dropout layers and Batch Normalization which has helped to handle the overfitting significatly.
 
 
-## Contact
-Created by [@githubusername] - feel free to contact me!
+
+
+
+
 
 
 <!-- Optional -->
